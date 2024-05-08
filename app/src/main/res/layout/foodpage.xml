@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bggradient"
+android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="315dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="@string/noypi_food"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFEB3B"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="200dp"
+        android:layout_height="21dp"
+        android:fontFamily="monospace"
+        android:text="TAPSILOG - ₱100"
+        android:textAllCaps="true"
+        android:textColor="#FFEB3B"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="189dp"
+        android:layout_height="89dp"
+        android:contentDescription="@string/bbt4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17"
+        app:srcCompat="@drawable/tapsilog"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="176dp"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.207"
+        tools:ignore="UnknownId,TextSizeCheck">
+
+        <Button
+
+            android:id="@+id/decrease_button"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#4CAF50"
+            android:text="-"
+            android:textColor="#263238"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/quantity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="0"
+            android:textColor="#FFEB3B"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/increase_button"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#4CAF50"
+            android:text="+"
+            android:textColor="#263238"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="168dp"
+        android:layout_height="24dp"
+        android:fontFamily="monospace"
+        android:text="adobo - ₱150"
+        android:textAllCaps="true"
+        android:textColor="#FFEB3B"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:layout_width="186dp"
+        android:layout_height="31dp"
+        android:fontFamily="monospace"
+        android:text="sinigang - ₱150"
+        android:textAllCaps="true"
+        android:textColor="#FFEB3B"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:layout_width="196dp"
+        android:layout_height="51dp"
+        android:fontFamily="monospace"
+        android:text="kare kare - ₱150"
+        android:textAllCaps="true"
+        android:textColor="#FFEB3B"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="164dp"
+        android:layout_height="121dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366"
+        app:srcCompat="@drawable/adobo_1"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout1"
+        android:layout_width="176dp"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424"
+        tools:ignore="UnknownId,TextSizeCheck">
+
+        <Button
+
+            android:id="@+id/decrease_button1"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#4CAF50"
+            android:text="-"
+            android:textColor="#263238"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/quantity_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="0"
+            android:textColor="#FFEB3B"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/increase_button1"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#4CAF50"
+            android:text="+"
+            android:textColor="#263238"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="162dp"
+        android:layout_height="143dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594"
+        app:srcCompat="@drawable/sinigang"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout2"
+        android:layout_width="176dp"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642"
+        tools:ignore="UnknownId,TextSizeCheck">
+
+        <Button
+
+            android:id="@+id/decrease_button2"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#4CAF50"
+            android:text="-"
+            android:textColor="#263238"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck,DuplicateClickableBoundsCheck" />
+
+        <TextView
+            android:id="@+id/quantity_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="0"
+            android:textColor="#FFEB3B"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/increase_button2"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#4CAF50"
+            android:text="+"
+            android:textColor="#263238"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck,DuplicateClickableBoundsCheck" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852"
+        app:srcCompat="@drawable/kare_kare1"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout3"
+        android:layout_width="176dp"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851"
+        tools:ignore="UnknownId,TextSizeCheck">
+
+        <Button
+
+            android:id="@+id/decrease_button3"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#4CAF50"
+            android:text="-"
+            android:textColor="#263238"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/quantity_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="0"
+            android:textColor="#FFEB3B"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/increase_button3"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#4CAF50"
+            android:text="+"
+            android:textColor="#263238"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="177dp"
+        android:layout_height="57dp"
+        android:text="Order"
+        android:textAllCaps="true"
+        android:backgroundTint="#14BA1B"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

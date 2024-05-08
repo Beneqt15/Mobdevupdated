@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bggradient"
+    tools:context=".MainActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Order Receipt"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFEB3B"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <!-- Order Summary Label -->
+    <TextView
+        android:id="@+id/orderSummaryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Summary:"
+        android:textColor="#FFEB3B"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp" />
+
+    <!-- Order Items Header Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Order Items -->
+    <LinearLayout
+        android:id="@+id/orderItemsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <!-- Order Total -->
+
+    <!-- User Information Fields -->
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Details:"
+        android:textColor="#FFEB3B"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/border"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFEB3B"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/border"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:padding="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFEB3B"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/border"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:padding="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFEB3B"
+        android:textSize="20sp" />
+
+    <!-- Submit Order Button -->
+    <Button
+        android:id="@+id/submitOrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#14BA1B"
+        android:text="Submit Order"
+        android:textAllCaps="true"
+        android:textIsSelectable="false"
+        android:textSize="24sp" />
+
+</LinearLayout>

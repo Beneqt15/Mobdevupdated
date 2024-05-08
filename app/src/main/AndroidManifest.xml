@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LogInAndSignUp"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".LandingPage"/>
+        <activity android:name=".HomeActivity" android:exported="true"/>
+        <activity android:name=".MainPageActivity" android:exported="true"/>
+        <activity android:name=".ReceiptActivity" android:exported="true"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <!-- Add this line for Firebase -->
+        <meta-data
+            android:name="com.google.firebase.database.DatabaseUrl"
+            android:value="https://YOUR_FIREBASE_PROJECT_ID.firebaseio.com" />  <!-- Replace with your Firebase project URL -->
+    </application>
+
+    <!-- Add internet permission -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
